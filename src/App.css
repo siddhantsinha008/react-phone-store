@@ -1,33 +1,52 @@
-.App {
-  text-align: center;
+:root{
+  --darkCyan:black;
+  --mainCyan:#ec7f37;
+  --mainBlack:#393939;
+  --mainwhite:white;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+  /* background-color:var(--mainBlack)!important; */
+  background-color:  #393939;
+  color:  #ec7f37;
+  font-family: 'Ubuntu', sans-serif!important;
+  font-size: 35px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-title{
+
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:var(--mainCyan)!important; 
+
 }
 
-.App-link {
-  color: #61dafb;
+.text-orange{
+  margin-left: 10px;
+  color:var(--mainCyan)!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-dark{
+  color:var(--mainBlack)!important;
+}
+
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem!important;
+  color:var(--mainCyan)!important;
+  border-radius: 0!important;
+  border:0.1rem solid var(--mainCyan)!important;
+}
+
+.btn-black:hover{
+  background:var(--mainCyan)!important;
+  color:var(--mainBlack)!important;
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color:var(--mainCyan)!important;
 }
